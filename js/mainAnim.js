@@ -3,7 +3,7 @@
 gsap.to("header h1", {
   transform:"translateX(-280%)",
    scrollTrigger:{
-    trigger: 'header h1',
+    trigger: 'header',
     scroller: "body",
     scrub:4,
   pin:true

@@ -29,7 +29,8 @@ header h1{
     padding: 10px;
     text-transform: uppercase;
     color: rgb(116, 61, 129);
-    mix-blend-mode: multiply
+    mix-blend-mode: multiply;
+    
 }
 
 
