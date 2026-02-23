@@ -23,3 +23,47 @@ gsap.to(".marque",{
 })
 
 // intro
+
+let tl = gsap.timeline();
+
+tl.from("#intro img",{
+    
+    x: -300,
+    delay:0.4,
+    duration:1,
+    opacity:0,
+   scrollTrigger:{
+    trigger: '#intro',
+    start: "top top",
+    
+   } 
+
+
+
+})
+tl.from("#intro h2",{
+    x: 300,
+    duration:1,
+    opacity:0,
+   scrollTrigger:{
+    trigger: '#intro',
+    start: "top top",
+    end: ''
+   } 
+
+
+
+})
+tl.from("#intro p",{
+    y: 300,
+    duration:1,
+    opacity:0,
+   scrollTrigger:{
+    trigger: '#intro',
+    start: "top top",
+    end: ''
+   } 
+
+
+
+})
