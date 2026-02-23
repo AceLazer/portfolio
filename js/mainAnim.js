@@ -1,7 +1,7 @@
 
 // hero
 gsap.to("header h1", {
-  transform:"translateX(-280%)",
+  transform:"translateX(-100%)",
    scrollTrigger:{
     trigger: 'header',
     scroller: "body",
@@ -12,6 +12,24 @@ gsap.to("header h1", {
    } 
 
 })
+
+//nav bar
+
+gsap.from("nav a",{
+
+   opacity:0,
+   duration:5,
+   ease: "expo.out",
+   scrollTrigger:{
+      trigger: '#intro',
+    scroller: "body",
+    
+   }
+   
+})
+
+
+
 
 // intro
 
@@ -54,11 +72,11 @@ gsap.from("#intro h2",{
 })
 gsap.from("#intro p",{
     y: 200,
-    delay:1.2,
+    delay:0.5,
     duration:1,
     opacity:0,
    scrollTrigger:{
-   trigger: '#intro',
+   trigger: '#row2',
    scroller: "body",
     start: 'top 60%',
     end: 'top 30%',
