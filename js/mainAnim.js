@@ -1,12 +1,23 @@
 
-// marque code
+// hero
+gsap.to("header h1", {
+  transform:"translateX(-280%)",
+   scrollTrigger:{
+    trigger: 'header h1',
+    scroller: "body",
+    scrub:4,
+  pin:true
+    
+    
+   } 
 
+})
 
 // intro
 
-let tl = gsap.timeline();
 
-tl.from("#intro img",{
+
+gsap.from("#intro img",{
     
     x: -300,
     delay:0.4,
@@ -14,41 +25,45 @@ tl.from("#intro img",{
     opacity:0,
    scrollTrigger:{
     trigger: '#intro',
-    start: 'top 50%',
-    end: 'top 10%',
-    markers: true,
-    scrub: true
+    start: 'top 60%',
+    end: 'top 30%',
+    scroller: "body",
+    
+    
     
    } 
 
 
 
 })
-tl.from("#intro h2",{
+gsap.from("#intro h2",{
     x: 200,
+    delay:0.8,
     duration:1,
     opacity:0,
    scrollTrigger:{
    trigger: '#intro',
-    start: 'top 50%',
-    end: 'top 20%',
-    
-    scrub: true
-   } 
-
-
-
-})
-tl.from("#intro p",{
-    y: 200,
-    duration:1,
-    opacity:0,
-   scrollTrigger:{
-   trigger: '#intro',
-    start: 'top 50%',
+   scroller: "body",
+   start: 'top 60%',
     end: 'top 30%',
     
-    scrub: true
+   } 
+
+
+
+})
+gsap.from("#intro p",{
+    y: 200,
+    delay:1.2,
+    duration:1,
+    opacity:0,
+   scrollTrigger:{
+   trigger: '#intro',
+   scroller: "body",
+    start: 'top 60%',
+    end: 'top 30%',
+    
+    
    } 
 
 
