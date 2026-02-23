@@ -1,26 +1,6 @@
 
 // marque code
 
-window.addEventListener("wheel", function(dets){
-
-    if(dets.deltaY>0){
-        // console.log("Normal scrolling")
-      gsap.to(".marque",{
-        transform:'translateX(-200%)',
-        duration: 4,
-        repeat: -1,
-        ease:"none"
-      })
-    }else{
-// console.log("Reverse scrolling")
-gsap.to(".marque",{
-        transform:'translateX(0%)',
-        duration: 4,
-        repeat: -1,
-        ease:"none"
-      })
-    }
-})
 
 // intro
 
@@ -34,7 +14,10 @@ tl.from("#intro img",{
     opacity:0,
    scrollTrigger:{
     trigger: '#intro',
-    start: "top top",
+    start: 'top 50%',
+    end: 'top 10%',
+    markers: true,
+    scrub: true
     
    } 
 
@@ -42,26 +25,30 @@ tl.from("#intro img",{
 
 })
 tl.from("#intro h2",{
-    x: 300,
+    x: 200,
     duration:1,
     opacity:0,
    scrollTrigger:{
-    trigger: '#intro',
-    start: "top top",
+   trigger: '#intro',
+    start: 'top 50%',
+    end: 'top 20%',
     
+    scrub: true
    } 
 
 
 
 })
 tl.from("#intro p",{
-    y: 300,
+    y: 200,
     duration:1,
     opacity:0,
    scrollTrigger:{
-    trigger: '#intro',
-    start: "top top",
-   
+   trigger: '#intro',
+    start: 'top 50%',
+    end: 'top 30%',
+    
+    scrub: true
    } 
 
 
