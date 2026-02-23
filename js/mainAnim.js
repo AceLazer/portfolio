@@ -48,7 +48,7 @@ tl.from("#intro h2",{
    scrollTrigger:{
     trigger: '#intro',
     start: "top top",
-    end: ''
+    
    } 
 
 
@@ -61,7 +61,7 @@ tl.from("#intro p",{
    scrollTrigger:{
     trigger: '#intro',
     start: "top top",
-    end: ''
+   
    } 
 
 
