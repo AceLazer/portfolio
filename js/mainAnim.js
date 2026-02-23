@@ -35,7 +35,7 @@ gsap.from("nav a",{
 
 
 
-gsap.from("#intro img",{
+gsap.from(".introw1 img",{
     
     x: -300,
     delay:0.4,
@@ -54,7 +54,7 @@ gsap.from("#intro img",{
 
 
 })
-gsap.from("#intro h2",{
+gsap.from("#introw1",{
     x: 200,
     delay:0.8,
     duration:1,
@@ -70,8 +70,8 @@ gsap.from("#intro h2",{
 
 
 })
-gsap.from("#intro p",{
-    y: 200,
+gsap.from(".introw2",{
+    x: -200,
     delay:0.5,
     duration:1,
     opacity:0,
