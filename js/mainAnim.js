@@ -91,7 +91,7 @@ gsap.from(".introw2",{
 
     gsap.from(".illus", {
       duration: 1,
-      scale: 0.1, 
+      scale: 0.6, 
       y: 60,
       stagger:{
          amount:"1.5",
@@ -102,6 +102,7 @@ gsap.from(".introw2",{
          scroller: "body",
           start: 'top 60%',
     end: 'top 30%',
+    once: "true"
    
       },
      
